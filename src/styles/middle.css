@@ -1,0 +1,234 @@
+:root {
+    --main-backgorund-color: rgba(34, 54, 71, 0.8);
+}
+
+.main2 {
+    background-color: var(--main-backgorund-color);
+    height: 100%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.phones {
+    width: 60%;
+    height: 60%;
+    transition: all 0.5s ease-in-out;
+}
+
+.telegram {
+    width: 10%;
+    height: 10%;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+.telegram-href {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta-links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 400px;
+    margin-bottom: -100px;
+    margin-top: 50px;
+}
+
+.footer-header {
+    color: white;
+    font-size: 48px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.insta-href {
+    width: 100px;
+    height: 100px;
+}
+
+.insta-href-div {
+    z-index: 99;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.fadeInUp-animation {
+    animation: 1.5s fadeInUp;
+}
+
+@media screen and (max-width:1630px) {
+    .insta-links {
+        column-gap: 300px;
+    }
+
+}
+
+@media screen and (max-width:1393px) {
+    .insta-links {
+        column-gap: 200px;
+        padding-bottom: 30px;
+    }
+
+    .footer-header {
+        font-size: 40px;
+    }
+
+    .insta-href {
+        width: 70px;
+        height: 70px;
+    }
+
+    .telegram {
+        width: 15%;
+        height: 15%;
+    }
+
+}
+
+.sub-x {
+    color: transparent;
+}
+
+@media screen and (min-width:1410px) {
+    .sub-x {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:1409px) {
+    .sub-x {
+        height: 100px;
+        background-color: var(--main-backgorund-color);
+        display: block;
+        filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0));
+    }
+
+}
+
+@media screen and (max-width:1020px) {
+    .insta-links {
+        column-gap: 150px;
+        padding-bottom: 50px;
+    }
+
+    .phones {
+        width: 70%;
+        height: 70%;
+    }
+
+    .footer-header {
+        font-size: 36px;
+    }
+
+    .insta-href {
+        width: 50px;
+        height: 50px;
+    }
+
+    .telegram {
+        width: 20%;
+        height: 20%;
+    }
+
+}
+
+@media screen and (max-width:879px) {
+    .insta-links {
+        column-gap: 100px;
+        padding-bottom: 50px;
+    }
+
+    .footer-header {
+        font-size: 32px;
+    }
+
+    .telegram {
+        width: 25%;
+        height: 25%;
+    }
+}
+
+@media screen and (max-width:734px) {
+    .insta-href {
+        width: 40px;
+        height: 40px;
+    }
+
+    .insta-links {
+        column-gap: 100px;
+        padding-bottom: 60px;
+    }
+
+    .footer-header {
+        font-size: 28px;
+    }
+
+    .phones {
+        width: 80%;
+        height: 80%;
+    }
+
+}
+
+@media screen and (max-width:630px) {
+    .insta-href {
+        width: 35px;
+        height: 35px;
+    }
+
+    .insta-links {
+        column-gap: 100px;
+        padding-bottom: 80px;
+    }
+
+    .footer-header {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .phones {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width:348px) {
+    .footer-header {
+        font-size: 20px;
+    }
+
+    .phones {
+        width: 100%;
+        height: 100%;
+    }
+
+    .telegram {
+        width: 45%;
+        height: 45%;
+    }
+}

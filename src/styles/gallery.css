@@ -1,0 +1,55 @@
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 6fr));
+    place-items: center;
+    margin: auto;
+}
+
+.card-container {
+    margin: auto;
+    transition: 0.4s ease-out;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.cards-video {
+    border-radius: 10px;
+    width: 200px;
+    height: 414px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.fadeInUp-animation {
+    animation: 1.5s fadeInUp;
+}
